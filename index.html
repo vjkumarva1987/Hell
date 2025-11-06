@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lucky Message</title>
+  <style>
+    body { 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      background: #111; 
+      color: #fff; 
+      font-family: sans-serif; 
+      text-align: center;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div id="message"></div>
+  <script>
+    const messages = [
+      "🎁 You win a candy!",
+      "😈 Trick — do 5 squats!",
+      "🎃 Boo! Grab a pumpkin sticker!",
+      "🍫 Take two chocolates!",
+      "👻 Tell a spooky story!"
+    ];
+
+    const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+    document.getElementById('message').textContent = randomMsg;
+  </script>
+</body>
+</html>
